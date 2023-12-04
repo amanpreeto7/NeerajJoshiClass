@@ -21,4 +21,12 @@
         app:layout_constraintTop_toBottomOf="@id/btnShowToast"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAlertDialog"
+        android:text="Alert Dialog"
+        app:layout_constraintTop_toBottomOf="@id/btnShowSnackbar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
