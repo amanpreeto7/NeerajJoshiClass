@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         //!! definite - double bang, bang bang
         //crash chances
         btnSave!!.setOnClickListener{
-
+            var intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         //? - this can be null, execute the next if it is not null

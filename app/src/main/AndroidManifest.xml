@@ -13,6 +13,9 @@
         android:theme="@style/Theme.NeeraJoshiClass"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MessagesActivity"
             android:exported="false" />
         <activity
