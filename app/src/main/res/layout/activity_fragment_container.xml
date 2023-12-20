@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/clMain"
     android:orientation="vertical"
-    tools:context=".FragmentContainerActivity">
+    tools:context=".activityinteraction.FragmentContainerActivity">
 
     <Button
         android:layout_width="wrap_content"
@@ -20,6 +20,6 @@
         android:layout_height="match_parent"
         android:id="@+id/fragment"
         android:layout_margin="40dp"
-        android:name="com.o7services.neerajoshiclass.FirstFragment"/>
+        android:name="com.o7services.neerajoshiclass.activityinteraction.FirstFragment"/>
 
 </LinearLayout>

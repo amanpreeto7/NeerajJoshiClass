@@ -1,11 +1,11 @@
-package com.o7services.neerajoshiclass
+package com.o7services.neerajoshiclass.activityinteraction
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
+import com.o7services.neerajoshiclass.R
 
 class FragmentContainerActivity : AppCompatActivity() {
     lateinit var clMain: LinearLayout

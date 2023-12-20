@@ -1,4 +1,4 @@
-package com.o7services.neerajoshiclass
+package com.o7services.neerajoshiclass.activityinteraction
 
 /**
  * @Author: 017
