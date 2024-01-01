@@ -36,6 +36,34 @@
         app:layout_constraintStart_toStartOf="@id/btnHelloWorld"/>
 
     <Button
+        android:id="@+id/tvJetpackNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jetpack_navigation"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName"
+        app:layout_constraintStart_toStartOf="@id/btnHelloWorld"/>
+
+    <Button
+        android:id="@+id/tvBottomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/bottom_navigation"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tvJetpackNavigation"
+        app:layout_constraintStart_toStartOf="@id/btnHelloWorld"/>
+ <Button
+        android:id="@+id/tvShowList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/show_list"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tvBottomNavigation"
+        app:layout_constraintStart_toStartOf="@id/btnHelloWorld"/>
+
+    <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="80dp"

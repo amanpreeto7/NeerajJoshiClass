@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_graph.xml"
+    app:startDestination="@id/bottomFirstFragment">
+
+    <fragment
+        android:id="@+id/bottomFirstFragment"
+        android:name="com.o7services.neerajoshiclass.bottomnavigation.BottomFirstFragment"
+        android:label="fragment_bottom_first"
+        tools:layout="@layout/fragment_bottom_first" />
+    <fragment
+        android:id="@+id/bottomSecondFragment"
+        android:name="com.o7services.neerajoshiclass.bottomnavigation.BottomSecondFragment"
+        android:label="fragment_bottom_second"
+        tools:layout="@layout/fragment_bottom_second" />
+</navigation>
