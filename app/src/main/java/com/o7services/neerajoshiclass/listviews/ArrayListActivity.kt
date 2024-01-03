@@ -21,6 +21,31 @@ class ArrayListActivity : AppCompatActivity() {
 
         binding.lv.setOnItemClickListener { adapterView, view, position, l ->
             Snackbar.make(binding.lv, "Clicked item ${arrayList[position]}", Snackbar.LENGTH_LONG).show()
+            arrayList.removeAt(position)
+            adapter.notifyDataSetChanged()
+        }
+
+        binding.lv.setOnItemLongClickListener { adapterView, view, position, l ->
+            //position
+//            arrayList.set(position, "qwerty")
+            if(binding.etAddItem.text.toString().isEmpty()){
+                binding.etAddItem.error = "Enter item to update"
+            }else {
+                arrayList.set(position, binding.etAddItem.text.toString())
+                binding.etAddItem.text.clear()
+                adapter.notifyDataSetChanged()
+            }
+            return@setOnItemLongClickListener true
+        }
+
+        binding.btnAdd.setOnClickListener{
+            if(binding.etAddItem.text.toString().isEmpty()){
+                binding.etAddItem.error = "Enter item to add"
+            }else{
+                arrayList.add(binding.etAddItem.text.toString())
+                binding.etAddItem.text.clear()
+                adapter.notifyDataSetChanged()
+            }
         }
     }
 }
